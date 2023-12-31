@@ -14,7 +14,7 @@ async function getCardById(id){
     </div>
     <div class="desc">
        <a href="./details.html?id=${element.id}"> <h1>${element.name}</h1></a>
-        <span>$${element.priz}</span>
+        <span>$${element.price}</span>
     </div>
 </div> `
 }

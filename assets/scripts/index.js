@@ -41,12 +41,12 @@ async function showData() {
     </div>
     <div class="desc">
        <a href="./details.html?id=${element.id}"> <h1>${element.name}</h1></a>
-        <span>$${element.priz}</span>
+        <span>$${element.price}</span>
         <div class="action">
       <span>  <i class="bi bi-arrow-clockwise" onclick="updateCard(${element.id})"></i> </span>
 
             <i class="bi bi-heart" onclick="favCard(${element.id})"></i>
-            <i class="bi bi-trash" onclick="deleteCard(${element.id})"></i>
+            <i class="bi bi-trash-fill" onclick="deleteCard(${element.id})"></i>
         </div>
     </div>
 </div> `
@@ -68,11 +68,11 @@ searchInput.addEventListener("input", function (e) {
 sortBtn.addEventListener("click", function () {
   console.log(filteredArr);
   if (sorted === "ascending") {
-    filteredArr.sort((a, b) => b.priz - a.priz);
+    filteredArr.sort((a, b) => b.price - a.price);
     sorted = "descending";
     sortBtn.innerHTML = "Sort Ascending";
   } else if (sorted === "descending") {
-    filteredArr.sort((a, b) => a.priz - b.priz);
+    filteredArr.sort((a, b) => a.price - b.price);
     sorted = "def";
     sortBtn.innerHTML = "Sort Descending";
   } else {
@@ -164,14 +164,14 @@ function updateCard(id) {
   editB.style.display = "block"
   axios.get(url + id).then(res => {
     name1.value = res.data.name;
-    price.value = res.data.priz;
+    price.value = res.data.price;
     img2.src = res.data.image;
   })
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     axios.get(url + id).then(res => {
       name1.value = res.data.name;
-      price.value = res.data.priz;
+      price.value = res.data.price;
       img2.src = res.data.image;
 
     })
@@ -180,7 +180,7 @@ function updateCard(id) {
     reader2.onload = (e) => {
       let obj = {
   image:e.target.result,
-  priz:price.value,
+  price:price.value,
   name:name1.value
 
       }

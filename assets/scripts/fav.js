@@ -16,7 +16,7 @@ data.map(element=>{
   </div>
   <div class="desc">
      <a href="./details.html?id=${element.id}"> <h1>${element.name}</h1></a>
-      <span>$${element.priz}</span>
+      <span>$${element.price}</span>
       <div class="action">
           <i class="bi bi-trash" onclick="deletefavCard(${element.id})"></i>
       </div>

@@ -21,7 +21,7 @@ reader.onload = function (e) {
     obj = {
         image: e.target.result,
         name: name.value,
-        priz:price.value
+        price:price.value
     }
     axios.post("http://localhost:3000/data", obj).then(res => console.log(res.data))
 }
