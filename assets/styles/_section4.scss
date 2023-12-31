@@ -1,0 +1,132 @@
+.section4 {
+    width: 100%;
+    min-height: 100vh;
+    @include center();
+    background-color: #ecfdff;
+    padding: 100px 0;
+
+    .section41 {
+        @include between();
+        gap: 50px;
+        width: 100%;
+        padding: 0 50px;
+
+        .image {
+            width: 40%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .text {
+            width: 50%;
+            @include start();
+            flex-direction: column;
+            gap: 10px;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .time {
+                @include between();
+                width: 100%;
+
+                .div {
+                    @include center();
+                    flex-direction: column;
+                    gap: 5px;
+
+                    span {
+                        color: gray;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: -20px;
+                    }
+
+                    h2 {
+                        text-align: center;
+                        font-size: 35px;
+                    }
+                }
+            }
+
+            .input {
+                width: 100%;
+                margin-top: 30px;
+                @include center();
+
+                input {
+                    width: 70%;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    height: 60px;
+                }
+
+                button {
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0px 45px;
+                    border: 0px solid transparent;
+                    background-color: #ff3368;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section4 {
+        .container {
+            .section41 {
+                flex-direction: column;
+                @include start();
+
+                .input {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    input {
+                        width: 100%;
+
+                    }
+
+                    button {
+                        width: 100%;
+                    }
+                }
+
+                .image {
+                    width: 90%;
+                }
+
+                .text {
+                    width: 100%;
+
+                    h1 {
+                        font-size: 25px;
+                    }
+
+                    .time {
+                        gap: 60px;
+
+                        span {
+                            font-size: 15px;
+                        }
+
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

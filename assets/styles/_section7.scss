@@ -1,0 +1,40 @@
+.section7 {
+    width: 100%;
+    padding: 50px 0;
+
+    .section71 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        .image {
+            padding: 20px;
+            border-right: solid 1px #edeff2;
+            @include center();
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+                border-bottom: solid 1px #edeff2;
+            }
+
+            &:nth-child(5),
+            &:nth-child(10) {
+                border-right: none;
+            }
+
+            img {
+                filter: grayscale(1);
+                transition: all 0.5s ease;
+                width: 50%;
+                height: 80%;
+                object-fit: cover;
+
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}

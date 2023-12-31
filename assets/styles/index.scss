@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.container{
+    margin: auto;
+    padding: 0 32px;
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+span{
+    cursor: pointer;
+}
+button,input{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+img,i{
+    cursor: pointer;
+}
+
+
+@import "mixin";
+@import "nav";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "section6";
+@import "section7";
+@import "footer";
+@import "add";
+@import "update";

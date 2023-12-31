@@ -1,0 +1,70 @@
+.section6 {
+    background-image: url("https://preview.colorlib.com/theme/aranoz/img/subscribe_area.png.webp");
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section61 {
+        @include center();
+        min-height: 100vh;
+        gap: 30px;
+        padding: 10px;
+        flex-direction: column;
+
+        span {
+            color: #ff3368;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .inputF {
+            @include center();
+
+            input {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+
+            button {
+                font-size: 20px;
+                padding: 10px 20px;
+                background: linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
+                color: #fff;
+                font-weight: 500;
+
+                &:hover {
+                    background: linear-gradient(16deg, #ff005a 0%, #ff5d2d 40%, #ffba00 100%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px){
+    .section6 {
+        .section61 {
+            width: 100%;
+            h1 {
+                font-size: 30px;
+            }
+
+            .inputF {
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

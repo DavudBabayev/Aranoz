@@ -1,0 +1,450 @@
+.section2 {
+    background-color: white;
+    width: 100%;
+    padding: 100px 28px;
+
+    .section21 {
+        @include center();
+        flex-direction: column;
+        gap: 28px;
+        width: 100%;
+
+        .top {
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: 36px;
+                color: #000;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            @include between;
+            flex-direction: column;
+            gap: 30px;
+
+            .cart1 {
+                @include between;
+                width: 100%;
+
+                .cart11 {
+                    display: flex;
+                    justify-content: start;
+                    position: relative;
+                    width: 58%;
+                    background-color: #ecfdff;
+                    padding: 150px 0px;
+                    z-index: 1;
+
+                    .exp {
+                        z-index: 22;
+                        position: absolute;
+                        font-size: 25px;
+                        font-weight: 600;
+                        left: 0px;
+                        bottom: -150px;
+                        transition: all 0.5s ease;
+                        opacity: 0;
+                        color: #ff3368;
+                        @include center;
+                        gap: 5px;
+                    }
+
+                    &:hover .exp {
+                        opacity: 1;
+
+                    }
+
+                    .text {
+                        position: relative;
+                        top: -95px;
+                        left: 40px;
+                        width: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 23px;
+                            font-weight: 700;
+
+
+                        }
+
+                    }
+
+                    .img {
+
+                        width: 50%;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+
+                        z-index: 2;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+
+                        }
+                    }
+
+                }
+
+                .cart121 {
+                    display: flex;
+                    justify-content: start;
+                    width: 40%;
+                    z-index: 1;
+                    padding: 150px 0px;
+                    background-color: #ecfdff;
+                    position: relative;
+
+                    .exp {
+                        z-index: 22;
+                        position: absolute;
+                        font-size: 25px;
+                        font-weight: 600;
+                        left: 0px;
+                        bottom: -150px;
+                        transition: all 0.5s ease;
+                        opacity: 0;
+                        color: #ff3368;
+                        @include center;
+                        gap: 5px;
+                    }
+
+                    &:hover .exp {
+                        opacity: 1;
+
+                    }
+
+                    .text {
+                        position: relative;
+                        top: -95px;
+                        left: 40px;
+                        width: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 23px;
+                            font-weight: 700;
+                        }
+
+                    }
+
+                    .img {
+
+                        width: 50%;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+
+                        }
+                    }
+                }
+            }
+
+            .cart12 {
+                @include between;
+                width: 100%;
+
+                .cart11 {
+                    display: flex;
+                    justify-content: start;
+                    position: relative;
+                    width: 58%;
+                    background-color: #ecfdff;
+                    padding: 150px 0px;
+                    z-index: 1;
+
+                    .exp {
+                        position: absolute;
+                        font-size: 25px;
+                        font-weight: 600;
+                        left: 0;
+                        bottom: -150px;
+                        transition: all 0.5s ease;
+                        opacity: 0;
+                        color: #ff3368;
+                        @include center;
+                        gap: 5px;
+                        z-index: 33332;
+                    }
+
+                    &:hover .exp {
+                        opacity: 1;
+
+                    }
+
+                    .text {
+                        position: relative;
+                        top: -95px;
+                        left: 40px;
+                        width: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 23px;
+                            font-weight: 700;
+
+                        }
+
+                    }
+
+                    .img {
+
+                        width: 80%;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+
+                        }
+                    }
+
+                }
+
+                .cart121 {
+                    display: flex;
+                    justify-content: start;
+                    width: 40%;
+                    z-index: 1;
+                    padding: 150px 0px;
+                    background-color: #ecfdff;
+                    position: relative;
+
+                    .exp {
+                        position: absolute;
+                        font-size: 25px;
+                        font-weight: 600;
+                        left: 0;
+                        bottom: -150px;
+                        transition: all 0.5s ease;
+                        opacity: 0;
+                        color: #ff3368;
+                        @include center;
+                        gap: 5px;
+                        z-index: 22;
+                    }
+
+                    &:hover .exp {
+                        opacity: 1;
+
+                    }
+
+                    .text {
+                        position: relative;
+                        top: -95px;
+                        left: 40px;
+                        width: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 23px;
+                            font-weight: 700;
+
+
+                        }
+
+                    }
+
+                    .img {
+
+                        width: 50%;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        // position: relative;
+                        // left: 100px;
+                        z-index: 2;
+
+                        img {
+                            background-position: center;
+                            background-size: cover;
+                            width: 100%
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:992px) and (min-width: 576px) {
+    .section2 {
+        .section21 {
+            .bottom {
+                .cart1 {
+                    .cart11 {
+                        height: 340px;
+
+                        .text {
+                            width: 90%;
+                            left: 15px;
+                        }
+
+                        .img {
+                            width: 55%;
+                        }
+                    }
+
+                    .cart121 {
+                        height: 340px;
+
+                        .text {
+                            width: 90%;
+                            left: 15px;
+                        }
+
+                        .img {
+                            width: 50%;
+                            // left: 56px;
+                        }
+                    }
+                }
+
+                .cart12 {
+                    .cart11 {
+                        height: 340px;
+
+                        .text {
+                            width: 90%;
+                            left: 15px;
+                        }
+
+                        .img {
+                            width: 100%;
+                        }
+                    }
+
+                    .cart121 {
+                        height: 340px;
+
+                        .text {
+                            width: 90%;
+                            left: 15px;
+                        }
+
+                        .img {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .section2 {
+        .section21 {
+            .bottom {
+                .cart1 {
+                    gap: 30px;
+                    flex-direction: column;
+
+                    .cart11 {
+                        width: 100%;
+
+                        .text {
+                            top: -131px;
+                        }
+
+                        .img {
+                            width: 42%;
+                            bottom: 0;
+                            left: 120px;
+                        }
+                    }
+
+                    .cart121 {
+                        width: 100%;
+
+                        .text {
+                            top: -131px;
+                        }
+
+                        .img {
+                            width: 30%;
+                            bottom: 0;
+                            left: 140px;
+                        }
+                    }
+                }
+
+                .cart12 {
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .cart11 {
+                        width: 100%;
+
+                        .text {
+                            top: -131px;
+                        }
+
+                        .img {
+                            width: 82%;
+                            bottom: 0;
+                            left: 40px;
+                        }
+                    }
+
+                    .cart121 {
+                        width: 100%;
+
+                        .text {
+                            top: -131px;
+                        }
+
+                        .img {
+                            width: 42%;
+                            bottom: 0;
+                            left: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
